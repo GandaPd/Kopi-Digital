@@ -284,6 +284,7 @@ h2 {
 .order-form .row {
   display: flex;
   flex-direction: row;
+  gap: 10px;
 }
 
 .order-form .row div {
