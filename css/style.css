@@ -382,12 +382,49 @@ footer p a {
   header .navbar {
     flex-direction: column; /* Menyusun logo dan menu secara vertikal */
     gap: 10px;
+    padding: 15px 10px;
+    text-align: center;
   }
 
   header .navbar .nav-menu {
     gap: 15px;
     padding-right: 0;
     font-size: 14px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Order Card: Pastikan tidak meluap (overflow) */
+  .order-card {
+    width: 95%; /* Gunakan persentase agar fleksibel */
+    margin: 20px auto; /* Ketengah secara otomatis */
+    padding: 20px 15px; /* Kecilkan padding dalam */
+  }
+
+  .order-form .row {
+    flex-direction: column; /* Ukuran dan Suhu jadi atas-bawah */
+    gap: 0;
+  }
+
+  .gallery .photo-gallery {
+    /* Gunakan 150px sebagai minimum agar tetap bisa 2 kolom di HP, 
+       atau 1fr jika ingin 1 kolom penuh */
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+    padding: 5px;
+  }
+
+  .gallery {
+    padding: 10px;
+    overflow: hidden; /* Tambahan untuk memastikan tidak ada elemen meluap */
+  }
+
+  .chat-btn {
+    bottom: 20px; /* Sedikit lebih naik dari bawah */
+    right: 20px; /* Memberi ruang agar tidak menempel ke pinggir layar */
+    width: 45px; /* Sedikit lebih kecil agar tidak menutupi konten */
+    height: 45px;
   }
 }
 
